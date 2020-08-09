@@ -1,0 +1,3 @@
+[submodule "lwc-recipes"]
+	path = lwc-recipes
+	url = https://github.com/trailheadapps/lwc-recipes

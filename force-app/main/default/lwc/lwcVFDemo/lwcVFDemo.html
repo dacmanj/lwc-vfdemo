@@ -1,0 +1,36 @@
+<template>
+    <lightning-card>
+        <h3 slot="title">
+            <lightning-icon icon-name="utility:connected_apps" size="small"></lightning-icon>
+            Display Lightning Web Components in Visual Force Page
+        </h3>
+        <div slot="footer">
+
+        </div>
+        <table class="slds-table slds-table_bordered slds-table_cell-buffer slds-table_col-bordered slds-table_striped">
+            <thead>
+                <tr class="slds-text-title_caps">
+
+                    <th scope="col">
+                        <div title="Key">Record Id</div>
+                    </th>
+                    <th scope="col">
+                        <div title="Value">Record Name</div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <template for:each={sObjData} for:item="sobKey">
+                    <tr key={sobKey.Id}>
+                        <th scope="col">
+                            {sobKey.Id}
+                        </th>
+                        <th scope="col">
+                            {sobKey.Name}
+                        </th>
+                    </tr>
+                </template>
+            </tbody>
+        </table>
+    </lightning-card>
+</template>
