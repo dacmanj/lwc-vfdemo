@@ -4,7 +4,8 @@
     <script>
         $Lightning.use("c:lwcVfDemoApp", function () {
             $Lightning.createComponent("c:lwcVFDemo", {
-                objectName: "Contact"
+                objectName: "Contact",
+                accountId: "{!$CurrentPage.parameters.oid}"
             },
                 "lightning",
                 function (cmp) {
